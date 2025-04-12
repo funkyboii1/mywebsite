@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .marquee {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #000;
+      color: white;
+      z-index: 1000;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-right 10s linear infinite;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    /* Push content down to not hide under the marquee */
+    body {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marquee">
+    <div class="marquee-text">📱 Experience the future with Apple – Where innovation meets elegance 🍏</div>
+  </div>
+
+  <div class="header">
+    <h1>Welcome to Apple</h1>
+  </div>
+
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="featured.html">Featured</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="content">
+    <h2>Think Different</h2>
+    <p>Innovation and design at your fingertips. Welcome to the official Apple experience.</p>
+    <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="Apple Logo" class="image">
+  </div>
+  
+</body>
+</html>
